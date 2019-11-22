@@ -1,4 +1,4 @@
-package com.dreamstart.petclinic;
+package com.dreamstar.petclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
