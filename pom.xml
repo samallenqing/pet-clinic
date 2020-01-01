@@ -16,7 +16,7 @@
 
     <groupId>com.dreamstar</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -31,6 +31,20 @@
             <url>file:///Users/samqing/IdeaProjects/trunk</url>
         </repository>
     </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -50,7 +64,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:samallenqing/pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/samallenqing/pet-clinic.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
